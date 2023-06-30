@@ -3,7 +3,9 @@ import componentsImage from '../../../assets/images/components.png';
 import stateImage from '../../../assets/images/state.png';
 import eventsImage from '../../../assets/images/events.png';
 
-import Concept from '../UI/Concept';
+import Header from '../components/Header';
+import Concepts from '../UI/Concepts';
+import Concept from '../components/Concept';
 
 import './LandingConcepts.css';
 const concepts = [
@@ -30,16 +32,12 @@ const concepts = [
 function LandingConcepts() {
   return (
     <div>
-      <header>
-        <img src={keyConceptsImage} alt="Medal badge with a star" />
-        <h1>Key React Concepts</h1>
-        <p>Selected key React concepts you should know about</p>
-      </header>
-      <ul id="concepts">
+      <Header scr={keyConceptsImage} />
+      <Concepts>
         {
           concepts.map((concept, key) => <Concept key={key} title={concept.title} image={concept.image} description={concept.description} />)
         }
-      </ul>
+      </Concepts>
     </div>
   );
 }
