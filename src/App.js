@@ -1,7 +1,7 @@
 import React from 'react';
 
-import LandingExpenses from './components/Templates/LandingExpenses';
-import LandingConcepts from './components/Templates/LandingConcepts';
+import LandingExpenses from './components/Expenses/Templates/LandingExpenses';
+import LandingConcepts from './components/Concepts/Templates/LandingConcepts';
 
 const App = () => {
 

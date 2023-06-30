@@ -1,5 +1,5 @@
 import React from 'react';
-import Expenses from '../Expenses/Expenses';
+import Expenses from '../components/Expenses';
 import './LandingExpenses.css';
 
 const LandingExpenses = () => {
