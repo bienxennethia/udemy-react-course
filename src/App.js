@@ -7,8 +7,8 @@ const App = () => {
 
   return (
     <div>
-      {/* <LandingExpenses /> */}
-      <LandingConcepts />
+      <LandingExpenses />
+      {/* <LandingConcepts /> */}
     </div>
   );
 }

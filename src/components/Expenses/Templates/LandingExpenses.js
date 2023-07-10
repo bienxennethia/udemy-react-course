@@ -2,6 +2,8 @@ import React from 'react';
 import Expenses from '../components/Expenses';
 import './LandingExpenses.css';
 
+import NewExpense from '../components/NewExpense/NewExpense';
+
 const LandingExpenses = () => {
   const expenses = [
     {
@@ -27,7 +29,7 @@ const LandingExpenses = () => {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
