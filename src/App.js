@@ -1,14 +1,12 @@
 import React from 'react';
 
-import LandingExpenses from './components/Expenses/Templates/LandingExpenses';
-import LandingConcepts from './components/Concepts/Templates/LandingConcepts';
+import LandingCourseGoal from './components/CourseGoal/Templates/LandingCourseGoal';
 
 const App = () => {
 
   return (
     <div>
-      <LandingExpenses />
-      {/* <LandingConcepts /> */}
+      <LandingCourseGoal />
     </div>
   );
 }
