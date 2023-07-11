@@ -27,9 +27,14 @@ const LandingExpenses = () => {
     },
   ];
 
+  const onAddExpenseHandler = (expense) => {
+    console.log('In LandingExpenses.js');
+    console.log(expense);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={onAddExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
