@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import './ExpenseForm.css';
 
 const ExpenseForm = (props) => {
+  const [displayForm, setDisplayForm] = useState(false);
   const [userInput, setUserInput] = useState({
     title: '',
     amount: '',
@@ -23,7 +24,16 @@ const ExpenseForm = (props) => {
       date: new Date(userInput.date)
     };
     props.onSaveExpenseData(expenseData);
+    formDisplayHandler();
   };
+
+  const formDisplayHandler = () => {
+    setDisplayForm(!displayForm);
+  }
+
+  if (!displayForm) {
+    return <button onClick={formDisplayHandler}>Add New Expense</button>
+  }
 
   return <form onSubmit={submitHandler}>
     <div className='new-expense__controls'>
@@ -41,6 +51,7 @@ const ExpenseForm = (props) => {
       </div>
     </div>
     <div className='new-expense__actions'>
+      <button onClick={formDisplayHandler}>Cancel</button>
       <button type='submit'>Add Expense</button>
     </div>
   </form>;
