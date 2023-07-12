@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Navigation.css";
 
 const NavLinkItem = ({ to, children }) => {
@@ -11,6 +11,12 @@ const NavLinkItem = ({ to, children }) => {
 };
 
 const Navigation = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.body.className = location.pathname.slice(1);
+  }, [location]);
+
   return (
     <div className="navigation">
       <ul className="navigation__list">
