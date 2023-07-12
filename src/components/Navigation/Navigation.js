@@ -14,7 +14,7 @@ const Navigation = () => {
   const location = useLocation();
 
   useEffect(() => {
-    document.body.className = location.pathname.slice(1);
+    document.body.id = location.pathname.slice(1);
   }, [location]);
 
   return (
