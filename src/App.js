@@ -5,6 +5,7 @@ import LandingConcepts from './components/Concepts/Templates/LandingConcepts';
 import LandingExpenses from './components/Expenses/Templates/LandingExpenses';
 import LandingCourseGoal from './components/CourseGoal/Templates/LandingCourseGoal';
 import LandingInvestment from './components/Investment/Templates/LandingInvestment';
+import LandingUser from './components/User/Templates/LandingUser';
 import Navigation from './components/Navigation/Navigation';
 import Homepage from './components/Homepage/Homepage';
 
@@ -14,10 +15,11 @@ const App = () => {
       <Navigation />
       <Routes>
         <Route exact path="/" element={<Homepage />} />
-        <Route exact path="/concepts" element={<LandingConcepts />} />
-        <Route exact path="/expenses" element={<LandingExpenses />} />
-        <Route exact path="/course-goal" element={<LandingCourseGoal />} />
-        <Route exact path="/investment" element={<LandingInvestment />} />
+        <Route path="/concepts" element={<LandingConcepts />} />
+        <Route path="/expenses" element={<LandingExpenses />} />
+        <Route path="/course-goal" element={<LandingCourseGoal />} />
+        <Route path="/investment" element={<LandingInvestment />} />
+        <Route path="/user" element={<LandingUser />} />
       </Routes>
     </Router>
   );

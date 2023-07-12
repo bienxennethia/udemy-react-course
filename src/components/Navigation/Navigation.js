@@ -25,6 +25,7 @@ const Navigation = () => {
         <NavLinkItem to="/expenses">Expenses</NavLinkItem>
         <NavLinkItem to="/course-goal">Course Goal</NavLinkItem>
         <NavLinkItem to="/investment">Investment</NavLinkItem>
+        <NavLinkItem to="/user">User</NavLinkItem>
       </ul>
     </div>
   );

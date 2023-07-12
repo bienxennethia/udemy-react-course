@@ -43,6 +43,9 @@ const Homepage = () => {
         <li className="homepage__item">
           <Link to="/investment" className="homepage__link">Investment</Link>
         </li>
+        <li className="homepage__item">
+          <Link to="/user" className="homepage__link">User</Link>
+        </li>
       </ul>
     </div>
   );
