@@ -4,8 +4,8 @@ html {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-body {
+body#expenses {
   margin: 0;
-  background-color: #3f3f3f;
+  background: #3f3f3f;
 }
 

@@ -2,7 +2,7 @@ import './Concepts.css';
 
 const Concepts = (props) => {
   return (
-    <div id='concepts'>
+    <div className='concepts'>
         {props.children}
     </div>
   );

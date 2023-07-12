@@ -6,8 +6,10 @@ html {
   font-family: sans-serif;
 }
 
-body {
+body#course-goal {
   margin: 0;
+  background: white;
+  color: #000;
 }
 
 #goals {

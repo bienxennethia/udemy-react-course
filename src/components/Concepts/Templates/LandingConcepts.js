@@ -29,7 +29,7 @@ const concepts = [
   },
 ];
 
-function LandingConcepts() {
+const LandingConcepts = () => {
   return (
     <div>
       <Header scr={keyConceptsImage} />
